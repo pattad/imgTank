@@ -1,0 +1,35 @@
+{
+  "canisters": {
+    "imgTank": {
+      "main": "src/imgTank/main.mo",
+      "type": "motoko"
+    },
+    "imgTank_assets": {
+      "dependencies": [
+        "imgTank"
+      ],
+      "frontend": {
+        "entrypoint": "src/imgTank_assets/src/index.html"
+      },
+      "source": [
+        "src/imgTank_assets/assets",
+        "dist/imgTank_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "dfx": "0.10.0",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
