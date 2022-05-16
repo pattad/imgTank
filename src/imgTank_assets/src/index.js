@@ -27,7 +27,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
 
   button.removeAttribute("disabled");
 
-  document.getElementById("greeting").innerHTML = "download pic local deployment <a href=http://127.0.0.1:8000/?canisterId=" + process.env.IMGTANK_CANISTER_ID + "&imgid=img001>here</a> <br/> or remote deyployment <a href=https://" + process.env.IMGTANK_CANISTER_ID + "/?imgid=img001>here</a>";
+  document.getElementById("greeting").innerHTML = "download pic local deployment <a href=http://127.0.0.1:8000/?canisterId=" + process.env.IMGTANK_CANISTER_ID + "&imgid=img001>here</a> <br/> or remote deyployment <a href=https://" + process.env.IMGTANK_CANISTER_ID + ".raw.ic0.app/?imgid=img001>here</a>";
 
   return false;
 });

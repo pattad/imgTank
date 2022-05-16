@@ -18,7 +18,7 @@ actor {
     private stable var _currentMemoryOffset : Nat64  = 2;
     private stable var _imgOffset : [(ImgId, Nat64)] = [];
     private var imgOffset : HashMap.HashMap<ImgId, Nat64> = HashMap.fromIter(_imgOffset.vals(), 0, Text.equal, Text.hash);
-	private stable var _imgSize : [(ImgId, Nat)] = [];
+    private stable var _imgSize : [(ImgId, Nat)] = [];
     private var imgSize : HashMap.HashMap<ImgId, Nat> = HashMap.fromIter(_imgSize.vals(), 0, Text.equal, Text.hash);
 
     // thumbnail handling
@@ -45,7 +45,7 @@ actor {
     };
 
     public shared(msg) func uploadThumbnail(imgId : ImgId, thumbnail : Blob) {
-		thumbs.put(imgId, thumbnail);
+        thumbs.put(imgId, thumbnail);
     };
 
     public query({ caller }) func getPic(id : ImgId): async Blob {
