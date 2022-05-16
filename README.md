@@ -2,6 +2,8 @@
 
 Welcome to the imgTank project. This IC project contains a canister which can store all your pictures.
 Currently, every canister may have a capacity of 8 Gbit.
+Also be aware that the POST limit for uploading on the IC is at 2MB.
+Download limit would be at 3.14 MB/response.
 
 ## Content
 
